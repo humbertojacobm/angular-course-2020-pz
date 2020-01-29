@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeate(1,1fr);
+}
+
+//hacer el curso de css grid.
+//mobile first.
+
+@media(min-width: 576px) {
+    .product-grid{
+        display: grid;
+        grid-template-columns: repeate(3,1fr);
+    }
+}
