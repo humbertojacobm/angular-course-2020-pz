@@ -33,11 +33,11 @@
 <ul>
 
 <div
-   *ngFor="let product of products; index as i">
+   *ngFor="let product of products">
    <app-product (productClicked)="clickProduct($event)" [product]="product"></app-product>       
 </div>
 
-<!--product.component.html-->
+<!-- product.component.html -->
 <h3>{{Product.title}}</h3>
 <img [src]="product.image" alt="">
 <strong>{{Product.price}}</strong>
