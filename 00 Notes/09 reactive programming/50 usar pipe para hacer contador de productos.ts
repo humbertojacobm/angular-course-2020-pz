@@ -24,14 +24,16 @@
  /*
   * queremos que angular maneje la subscripción mas eficientemente
   
-  Observable -> rxjs
-  convertitomos total -> total$ : Observable<number>();
+  products.component.ts
+
+    Observable -> rxjs
+    convertitomos total -> total$ : Observable<number>();
 
 
-  this.total$ = this.cartService.cart$
-  .pipe(
-      map(products => products.length)
-  )
+    this.total$ = this.cartService.cart$
+    .pipe(
+        map(products => products.length)
+    )
 
   => template
 

@@ -30,7 +30,7 @@ app-routing.module.ts
 /*
   order.component.ts
 
-   products: Observable<Product[]> = [];
+   products$: Observable<Product[]> = [];
 
    this.products$ =  this.cartService.cart$
 
