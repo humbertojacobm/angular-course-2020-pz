@@ -1,6 +1,6 @@
 /**
  * cuando hay un flujo de datos activo como el uso de una BehaviorSubect
- * podemos usar pipes para poder reprocesarlo.
+ * podemos usar pipes de rxjs (map) para poder reprocesarlo.
  * 
  */
 
@@ -37,6 +37,6 @@
 
   "total$ | async"
    
-  en esta forma se desuscribe solo.
+  en esta forma se desuscribe solo sin necesidad de usar un ngDestroy.
   
  */
