@@ -20,23 +20,32 @@ form-product.component.ts
 
 import {FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
 
-form: FormGroup;
+class FormProductComponent{
+    form: FormGroup;
 
-constructor( private formBuilder: FormBuilder){
-    this.buildForm();
+    constructor( private formBuilder: FormBuilder){
+        this.buildForm();
+    }
+
+    private buildForm(){
+        this.form = this.formBuilder.group({
+            id: ['',[Validators.Required]],
+            title: ['',[Validators.Required]],
+            price: ['',[Validators.Required]],
+            image: '',
+            description: ['',[Validators.Required]]
+        })
+    }
 }
 
-private buildForm(){
-    this.form = this.formBuilder.group({
-        id: ['',[Validators.Required]],
-        title: ['',[Validators.Required]],
-        price: ['',[Validators.Required]],
-        image: '',
-        description: ['',[Validators.Required]]
-    })
-}
+
 
 ```
+## FormGroup:
+Me permiter crear un formulario
+
+## FormBuilder
+Es un utilitario que me permite crear formularios dinamicamente.
 
 form-product.component.ts
 ```HTML
@@ -61,11 +70,7 @@ form-product.component.ts
 ## formControlName
   enlaza con un control en el typescript
 
-## FormGroup:
-Me permiter crear un formulario
 
-## FormBuilder
-Es un utilitario que me permite crear formularios dinamicamente.
 
 
 
