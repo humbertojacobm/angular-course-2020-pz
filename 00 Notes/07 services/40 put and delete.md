@@ -24,7 +24,7 @@ export class ProductsService {
     
     //recuerda que el partial, va a tomar solo los attributos que han cambiado en el modelo.
     updateProduct(id: string, changes: Partial<Product>){
-        return this.http.get<Product>(`${environment.url_api}/products/${id}`,changes);
+        return this.http.put<Product>(`${environment.url_api}/products/${id}`,changes);
     }
 
     deleteProduct(id: string){

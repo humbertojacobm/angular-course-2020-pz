@@ -1,6 +1,8 @@
 Por defecto angular nos entrega dos ambientes
 
 Vamos a crear un nuevo archivo de ambiente
+Pero primero vamos ha hacer la compilación completa para descartar errores de este tipo.
+
 ```bash
 ng build --prod
 ```
