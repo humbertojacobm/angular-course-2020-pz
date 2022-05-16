@@ -1,4 +1,5 @@
-//creating angular projects, angular componenetes, angular modules, angular pipes using angular/cli
+//creating angular projects, angular componenetes, angular modules, 
+//angular pipes using angular/cli
 
 //ng new humberto-app
 // cd humberto-app
